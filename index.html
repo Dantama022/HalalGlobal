@@ -107,6 +107,14 @@
             cursor: pointer;
         }
 
+        /* Hide mobile drawer on desktop by default */
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu-close {
+            display: none;
+        }
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
@@ -744,6 +752,7 @@
             }
             
             .mobile-menu {
+                display: block;
                 position: fixed;
                 top: 0;
                 right: -300px;
@@ -761,13 +770,13 @@
             }
             
             .mobile-menu-close {
+                display: block;
                 background: none;
                 border: none;
                 font-size: 1.5rem;
                 color: #333;
                 cursor: pointer;
                 margin-bottom: 2rem;
-                display: block;
             }
             
             .mobile-nav ul {
